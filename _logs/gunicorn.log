@@ -1,0 +1,1539 @@
+[2016-02-25 15:43:00 +0000] [4155] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 15:43:00 +0000] [4155] [INFO] Listening at: unix:/tmp/coolestimator.sock (4155)
+[2016-02-25 15:43:00 +0000] [4155] [INFO] Using worker: sync
+[2016-02-25 15:43:00 +0000] [4163] [INFO] Booting worker with pid: 4163
+[2016-02-25 15:43:00 +0000] [4164] [INFO] Booting worker with pid: 4164
+[2016-02-25 16:34:05 +0000] [4155] [INFO] Handling signal: term
+[2016-02-25 21:34:05 +0000] [4163] [INFO] Worker exiting (pid: 4163)
+[2016-02-25 21:34:05 +0000] [4164] [INFO] Worker exiting (pid: 4164)
+[2016-02-25 16:34:05 +0000] [4155] [INFO] Shutting down: Master
+[2016-02-25 16:34:06 +0000] [8018] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 16:34:06 +0000] [8018] [INFO] Listening at: unix:/tmp/coolestimator.sock (8018)
+[2016-02-25 16:34:06 +0000] [8018] [INFO] Using worker: sync
+[2016-02-25 16:34:06 +0000] [8026] [INFO] Booting worker with pid: 8026
+[2016-02-25 16:34:06 +0000] [8029] [INFO] Booting worker with pid: 8029
+[2016-02-25 21:34:06 +0000] [8026] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+[2016-02-25 21:34:06 +0000] [8026] [INFO] Worker exiting (pid: 8026)
+[2016-02-25 21:34:07 +0000] [8029] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+[2016-02-25 21:34:07 +0000] [8029] [INFO] Worker exiting (pid: 8029)
+[2016-02-25 16:34:08 +0000] [8032] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 16:34:08 +0000] [8032] [INFO] Listening at: unix:/tmp/coolestimator.sock (8032)
+[2016-02-25 16:34:08 +0000] [8032] [INFO] Using worker: sync
+[2016-02-25 16:34:08 +0000] [8040] [INFO] Booting worker with pid: 8040
+[2016-02-25 16:34:08 +0000] [8043] [INFO] Booting worker with pid: 8043
+[2016-02-25 21:34:08 +0000] [8040] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+[2016-02-25 21:34:08 +0000] [8040] [INFO] Worker exiting (pid: 8040)
+[2016-02-25 21:34:08 +0000] [8043] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+[2016-02-25 21:34:08 +0000] [8043] [INFO] Worker exiting (pid: 8043)
+[2016-02-25 16:34:10 +0000] [8046] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 16:34:10 +0000] [8046] [INFO] Listening at: unix:/tmp/coolestimator.sock (8046)
+[2016-02-25 16:34:10 +0000] [8046] [INFO] Using worker: sync
+[2016-02-25 16:34:10 +0000] [8054] [INFO] Booting worker with pid: 8054
+[2016-02-25 16:34:11 +0000] [8055] [INFO] Booting worker with pid: 8055
+[2016-02-25 21:34:11 +0000] [8054] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+[2016-02-25 21:34:11 +0000] [8054] [INFO] Worker exiting (pid: 8054)
+[2016-02-25 21:34:11 +0000] [8055] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+[2016-02-25 21:34:11 +0000] [8055] [INFO] Worker exiting (pid: 8055)
+[2016-02-25 16:34:14 +0000] [8060] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 16:34:14 +0000] [8060] [INFO] Listening at: unix:/tmp/coolestimator.sock (8060)
+[2016-02-25 16:34:14 +0000] [8060] [INFO] Using worker: sync
+[2016-02-25 16:34:14 +0000] [8068] [INFO] Booting worker with pid: 8068
+[2016-02-25 16:34:14 +0000] [8069] [INFO] Booting worker with pid: 8069
+[2016-02-25 21:34:15 +0000] [8068] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+[2016-02-25 21:34:15 +0000] [8068] [INFO] Worker exiting (pid: 8068)
+[2016-02-25 21:34:15 +0000] [8069] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named stronghold
+[2016-02-25 21:34:15 +0000] [8069] [INFO] Worker exiting (pid: 8069)
+[2016-02-25 16:34:15 +0000] [8060] [INFO] Shutting down: Master
+[2016-02-25 16:34:15 +0000] [8060] [INFO] Reason: Worker failed to boot.
+[2016-02-25 16:48:37 +0000] [11632] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 16:48:37 +0000] [11632] [INFO] Listening at: unix:/tmp/coolestimator.sock (11632)
+[2016-02-25 16:48:37 +0000] [11632] [INFO] Using worker: sync
+[2016-02-25 16:48:37 +0000] [11640] [INFO] Booting worker with pid: 11640
+[2016-02-25 16:48:37 +0000] [11641] [INFO] Booting worker with pid: 11641
+[2016-02-25 16:48:44 +0000] [11632] [INFO] Handling signal: term
+[2016-02-25 21:48:44 +0000] [11640] [INFO] Worker exiting (pid: 11640)
+[2016-02-25 21:48:44 +0000] [11641] [INFO] Worker exiting (pid: 11641)
+[2016-02-25 16:48:44 +0000] [11632] [INFO] Shutting down: Master
+[2016-02-25 16:48:45 +0000] [11647] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 16:48:45 +0000] [11647] [INFO] Listening at: unix:/tmp/coolestimator.sock (11647)
+[2016-02-25 16:48:45 +0000] [11647] [INFO] Using worker: sync
+[2016-02-25 16:48:45 +0000] [11655] [INFO] Booting worker with pid: 11655
+[2016-02-25 16:48:45 +0000] [11658] [INFO] Booting worker with pid: 11658
+[2016-02-25 17:45:20 +0000] [11647] [INFO] Handling signal: term
+[2016-02-25 22:45:20 +0000] [11658] [INFO] Worker exiting (pid: 11658)
+[2016-02-25 22:45:20 +0000] [11655] [INFO] Worker exiting (pid: 11655)
+[2016-02-25 17:45:21 +0000] [11647] [INFO] Shutting down: Master
+[2016-02-25 17:45:22 +0000] [12219] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 17:45:22 +0000] [12219] [INFO] Listening at: unix:/tmp/coolestimator.sock (12219)
+[2016-02-25 17:45:22 +0000] [12219] [INFO] Using worker: sync
+[2016-02-25 17:45:22 +0000] [12227] [INFO] Booting worker with pid: 12227
+[2016-02-25 17:45:22 +0000] [12228] [INFO] Booting worker with pid: 12228
+[2016-02-25 22:45:23 +0000] [12227] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+[2016-02-25 22:45:23 +0000] [12227] [INFO] Worker exiting (pid: 12227)
+[2016-02-25 22:45:23 +0000] [12228] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+[2016-02-25 22:45:23 +0000] [12228] [INFO] Worker exiting (pid: 12228)
+[2016-02-25 17:45:24 +0000] [12233] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 17:45:24 +0000] [12233] [INFO] Listening at: unix:/tmp/coolestimator.sock (12233)
+[2016-02-25 17:45:24 +0000] [12233] [INFO] Using worker: sync
+[2016-02-25 17:45:24 +0000] [12241] [INFO] Booting worker with pid: 12241
+[2016-02-25 17:45:24 +0000] [12242] [INFO] Booting worker with pid: 12242
+[2016-02-25 22:45:25 +0000] [12241] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+[2016-02-25 22:45:25 +0000] [12241] [INFO] Worker exiting (pid: 12241)
+[2016-02-25 22:45:25 +0000] [12242] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+[2016-02-25 22:45:25 +0000] [12242] [INFO] Worker exiting (pid: 12242)
+[2016-02-25 17:45:26 +0000] [12247] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 17:45:26 +0000] [12247] [INFO] Listening at: unix:/tmp/coolestimator.sock (12247)
+[2016-02-25 17:45:26 +0000] [12247] [INFO] Using worker: sync
+[2016-02-25 17:45:26 +0000] [12255] [INFO] Booting worker with pid: 12255
+[2016-02-25 17:45:26 +0000] [12256] [INFO] Booting worker with pid: 12256
+[2016-02-25 22:45:27 +0000] [12255] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+[2016-02-25 22:45:27 +0000] [12255] [INFO] Worker exiting (pid: 12255)
+[2016-02-25 22:45:27 +0000] [12256] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+[2016-02-25 22:45:27 +0000] [12256] [INFO] Worker exiting (pid: 12256)
+[2016-02-25 17:45:27 +0000] [12247] [INFO] Shutting down: Master
+[2016-02-25 17:45:27 +0000] [12247] [INFO] Reason: Worker failed to boot.
+[2016-02-25 17:45:29 +0000] [12265] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 17:45:29 +0000] [12265] [INFO] Listening at: unix:/tmp/coolestimator.sock (12265)
+[2016-02-25 17:45:29 +0000] [12265] [INFO] Using worker: sync
+[2016-02-25 17:45:29 +0000] [12273] [INFO] Booting worker with pid: 12273
+[2016-02-25 17:45:29 +0000] [12274] [INFO] Booting worker with pid: 12274
+[2016-02-25 22:45:29 +0000] [12273] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+[2016-02-25 22:45:29 +0000] [12273] [INFO] Worker exiting (pid: 12273)
+[2016-02-25 22:45:29 +0000] [12274] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+[2016-02-25 22:45:29 +0000] [12274] [INFO] Worker exiting (pid: 12274)
+[2016-02-25 17:45:33 +0000] [12279] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 17:45:33 +0000] [12279] [INFO] Listening at: unix:/tmp/coolestimator.sock (12279)
+[2016-02-25 17:45:33 +0000] [12279] [INFO] Using worker: sync
+[2016-02-25 17:45:33 +0000] [12287] [INFO] Booting worker with pid: 12287
+[2016-02-25 17:45:33 +0000] [12288] [INFO] Booting worker with pid: 12288
+[2016-02-25 22:45:33 +0000] [12287] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+[2016-02-25 22:45:33 +0000] [12287] [INFO] Worker exiting (pid: 12287)
+[2016-02-25 22:45:33 +0000] [12288] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+Traceback (most recent call last):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/opt/development/coolestimator/coolestimator/portal/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/contrib/auth/models.py", line 41, in <module>
+    class Permission(models.Model):
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 139, in __new__
+    new_class.add_to_class('_meta', Options(meta, **kwargs))
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/base.py", line 324, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/models/options.py", line 250, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/__init__.py", line 36, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 240, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/opt/development/coolestimator/env/local/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 27, in <module>
+    raise ImproperlyConfigured("Error loading MySQLdb module: %s" % e)
+ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+[2016-02-25 22:45:33 +0000] [12288] [INFO] Worker exiting (pid: 12288)
+[2016-02-25 17:47:20 +0000] [12330] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 17:47:20 +0000] [12330] [INFO] Listening at: unix:/tmp/coolestimator.sock (12330)
+[2016-02-25 17:47:20 +0000] [12330] [INFO] Using worker: sync
+[2016-02-25 17:47:20 +0000] [12338] [INFO] Booting worker with pid: 12338
+[2016-02-25 17:47:20 +0000] [12339] [INFO] Booting worker with pid: 12339
+[2016-02-25 17:47:26 +0000] [12330] [INFO] Handling signal: term
+[2016-02-25 22:47:26 +0000] [12338] [INFO] Worker exiting (pid: 12338)
+[2016-02-25 22:47:26 +0000] [12339] [INFO] Worker exiting (pid: 12339)
+[2016-02-25 17:47:26 +0000] [12330] [INFO] Shutting down: Master
+[2016-02-25 17:47:27 +0000] [12348] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 17:47:27 +0000] [12348] [INFO] Listening at: unix:/tmp/coolestimator.sock (12348)
+[2016-02-25 17:47:27 +0000] [12348] [INFO] Using worker: sync
+[2016-02-25 17:47:27 +0000] [12356] [INFO] Booting worker with pid: 12356
+[2016-02-25 17:47:27 +0000] [12359] [INFO] Booting worker with pid: 12359
+[2016-02-25 17:51:36 +0000] [12348] [INFO] Handling signal: term
+[2016-02-25 22:51:36 +0000] [12356] [INFO] Worker exiting (pid: 12356)
+[2016-02-25 22:51:36 +0000] [12359] [INFO] Worker exiting (pid: 12359)
+[2016-02-25 17:51:36 +0000] [12348] [INFO] Shutting down: Master
+[2016-02-25 17:51:37 +0000] [12384] [INFO] Starting gunicorn 19.4.5
+[2016-02-25 17:51:37 +0000] [12384] [INFO] Listening at: unix:/tmp/coolestimator.sock (12384)
+[2016-02-25 17:51:37 +0000] [12384] [INFO] Using worker: sync
+[2016-02-25 17:51:37 +0000] [12392] [INFO] Booting worker with pid: 12392
+[2016-02-25 17:51:37 +0000] [12393] [INFO] Booting worker with pid: 12393
+[2016-02-27 16:01:10 +0000] [12384] [INFO] Handling signal: term
+[2016-02-27 21:01:10 +0000] [12392] [INFO] Worker exiting (pid: 12392)
+[2016-02-27 21:01:10 +0000] [12393] [INFO] Worker exiting (pid: 12393)
+[2016-02-27 16:01:10 +0000] [12384] [INFO] Shutting down: Master
+[2016-02-27 16:01:12 +0000] [4608] [INFO] Starting gunicorn 19.4.5
+[2016-02-27 16:01:12 +0000] [4608] [INFO] Listening at: unix:/tmp/coolestimator.sock (4608)
+[2016-02-27 16:01:12 +0000] [4608] [INFO] Using worker: sync
+[2016-02-27 16:01:12 +0000] [4616] [INFO] Booting worker with pid: 4616
+[2016-02-27 16:01:12 +0000] [4619] [INFO] Booting worker with pid: 4619
+[2016-02-29 20:43:26 +0000] [4608] [INFO] Handling signal: term
+[2016-03-01 01:43:26 +0000] [4616] [INFO] Worker exiting (pid: 4616)
+[2016-03-01 01:43:26 +0000] [4619] [INFO] Worker exiting (pid: 4619)
+[2016-02-29 20:43:26 +0000] [4608] [INFO] Shutting down: Master
+[2016-02-29 20:43:28 +0000] [22666] [INFO] Starting gunicorn 19.4.5
+[2016-02-29 20:43:28 +0000] [22666] [INFO] Listening at: unix:/tmp/coolestimator.sock (22666)
+[2016-02-29 20:43:28 +0000] [22666] [INFO] Using worker: sync
+[2016-02-29 20:43:28 +0000] [22674] [INFO] Booting worker with pid: 22674
+[2016-02-29 20:43:28 +0000] [22675] [INFO] Booting worker with pid: 22675
+[2016-04-16 00:04:55 +0000] [22666] [INFO] Handling signal: term
+[2016-04-16 04:04:55 +0000] [22674] [INFO] Worker exiting (pid: 22674)
+[2016-04-16 04:04:55 +0000] [22675] [INFO] Worker exiting (pid: 22675)
+[2016-04-16 00:04:56 +0000] [22666] [INFO] Shutting down: Master
+[2016-04-16 00:04:57 +0000] [9372] [INFO] Starting gunicorn 19.4.5
+[2016-04-16 00:04:57 +0000] [9372] [INFO] Listening at: unix:/tmp/coolestimator.sock (9372)
+[2016-04-16 00:04:57 +0000] [9372] [INFO] Using worker: sync
+[2016-04-16 00:04:57 +0000] [9380] [INFO] Booting worker with pid: 9380
+[2016-04-16 00:04:57 +0000] [9381] [INFO] Booting worker with pid: 9381
+[2016-04-26 11:33:00 +0000] [9372] [INFO] Handling signal: term
+[2016-04-26 15:33:00 +0000] [9380] [INFO] Worker exiting (pid: 9380)
+[2016-04-26 15:33:00 +0000] [9381] [INFO] Worker exiting (pid: 9381)
+[2016-04-26 11:33:01 +0000] [9372] [INFO] Shutting down: Master
+[2016-04-26 11:33:59 +0000] [1013] [INFO] Starting gunicorn 19.4.5
+[2016-04-26 11:33:59 +0000] [1013] [INFO] Listening at: unix:/tmp/coolestimator.sock (1013)
+[2016-04-26 11:33:59 +0000] [1013] [INFO] Using worker: sync
+[2016-04-26 11:33:59 +0000] [1089] [INFO] Booting worker with pid: 1089
+[2016-04-26 11:33:59 +0000] [1091] [INFO] Booting worker with pid: 1091
